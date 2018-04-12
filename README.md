@@ -1,5 +1,4 @@
-﻿# Learning Facial Expressions with
-Convolutional Neural Networks
+﻿# Learning Facial Expressions with Convolutional Neural Networks
 
 # Table of contents
 
