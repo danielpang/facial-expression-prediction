@@ -3,8 +3,6 @@ from keras.models import Sequential
 from keras.layers import Conv2D, MaxPooling2D, Dense, Flatten, Dropout, BatchNormalization
 from keras.utils import np_utils
 import keras.losses
-import keras
-import tensorflow as tf
 
 class FacialModel(BaseModel):
 	def __init__(self, config):
