@@ -19,6 +19,9 @@ class FacialModel(BaseModel):
 		self.model.add(BatchNormalization())
 		self.model.add(Dropout(0.25))
 
+		# Add noise to our data
+		model.add(GaussianNoise(0.3))
+
 		self.model.add(Conv2D(128, kernel_size=(5,5), strides=(1,1), padding='same', data_format='channels_first', activation='relu', input_shape=in_shape))
 		self.model.add(MaxPooling2D())
 		self.model.add(BatchNormalization())
